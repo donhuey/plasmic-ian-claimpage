@@ -89,7 +89,7 @@ function PlasmicWalletconnectButton__RenderFunc(props) {
             sty.connectWallet
           )}
         >
-          {"Connect Wallet"}
+          {"Register Wallet"}
         </div>
       </button>
     </div>

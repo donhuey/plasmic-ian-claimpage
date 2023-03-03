@@ -67,10 +67,9 @@ useEffect(() => {
     return (
       <main >
        {/* select nft */}
-      <PlasmicClaimPage 
-            claimBeanieHeader={{claimText:`Claim Nft ${nft.tagUid} Detail`}}
-
-            claimButton={{
+      <PlasmicClaimPage /* The claimpage component that encompasses the entirety of the claim page */
+            claimBeanieHeader={{claimText:`Claim Nft ${nft.tagUid} Detail`}} /* Header component, this will not be dynamic, just used as an example at first. claimText is the slot used for dynamic data based on the particular prop used */
+            claimButton={{ /* Claim button component */
               isVerified:nft?.claimed,
               onClick:() => {ClaimNow(nft.tagUid)}
             }}
